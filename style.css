@@ -1,0 +1,69 @@
+
+body{
+	margin: 0;
+}
+.parallax{
+	background-image: url(https://pbs.twimg.com/media/EN26PRHWsAE5zVx.jpg);
+	min-height: 1000px;
+	background-attachment: fixed;
+	background-position: left;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+
+@media only screen and (max-device-width: 1024px) {
+    .parallax {
+        background-attachment: scroll;
+    }
+}
+
+#navbar{
+	overflow:hidden;
+	background-color; #gray;
+}
+
+#navbar a{
+	float: center;
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 20px 40px;
+	text-decoration: none;
+	font-size: 17px;
+	
+}
+
+
+#navbar a:hover{
+	background-color: #ddd;
+	color: blue;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+
+#video{
+	padding: 50px;
+	background-color: gray;
+	text-align:center;
+	
+}
+
+
+
+
+
+

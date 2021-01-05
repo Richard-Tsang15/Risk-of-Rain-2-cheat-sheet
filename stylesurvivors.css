@@ -1,0 +1,190 @@
+body{
+	margin: 0;
+	
+}
+
+
+.survivorbackground{
+	background-image: url(https://pbs.twimg.com/media/ESsC9uPXgAA1muu.jpg:large); 
+}
+
+.survivortitleheader{
+	background-color: gray;
+}
+
+.survivortitle{
+	color: blue;
+	float: center;
+	text-align: center;
+	padding: 10px 20px;
+}
+
+
+
+.container{
+	display: grid;
+	grid-gap: 50px 20px;
+	grid-template-columns: auto auto auto;
+	grid-column: 1/3;	
+	align-content: flex-start;
+}
+
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
+
+#acridspace{
+	background-image:url(pictures/Acridpic.png);
+	border-radius: 50%;
+	height: 200px;
+	width: 200px;
+	background-size: cover;
+	text-align:center;
+	justify-content: center;
+	color: white; 
+	
+	
+}
+#acridspace:hover{
+	cursor: pointer;
+}
+
+.acridmodal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.acridcontentmodal {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+
+#artificerspace{
+	background-image:url(pictures/Artificerpic.png);
+	border-radius: 50%;
+	height: 200px;
+	width: 200px;
+	background-size: cover;
+	text-align:center;
+	justify-content: center;
+	color: white; 
+
+	
+}
+
+
+
+#captainspace{
+	background-image:url(pictures/captainpic.png);
+	border-radius: 50%;
+	height: 200px;
+	width: 200px;
+	background-size: cover;
+	text-align:center;
+	justify-content: center;
+	color: white; 
+}
+
+#commandospace{
+	background-image:url(pictures/commandopic.png);
+	border-radius: 50%;
+	height: 200px;
+	width: 200px;
+	background-size: cover;
+	text-align:center;
+	justify-content: center;
+	color: white; 
+}
+
+#engineerspace{
+	background-image:url(pictures/engineerpic.png);
+	border-radius: 50%;
+	height: 200px;
+	width: 200px;
+	background-size: cover;
+	text-align:center;
+	justify-content: center;
+	color: white; 
+	
+}
+
+#huntressspace{
+	background-image:url(pictures/huntresspic.png);
+	border-radius: 50%;
+	height: 200px;
+	width: 200px;
+	background-size: cover;
+	text-align:center;
+	justify-content: center;
+	color: white; 
+}
+
+#loaderspace{
+	background-image:url(pictures/loaderpic.png);
+	border-radius: 50%;
+	height: 200px;
+	width: 200px;
+	background-size: cover;
+	text-align:center;
+	justify-content: center;
+	color: white; 
+}
+
+#mercenaryspace{
+	background-image:url(pictures/mercenarypic.png);
+	border-radius: 50%;
+	height: 200px;
+	width: 200px;
+	background-size: cover;
+	text-align:center;
+	justify-content: center;
+	color: white; 
+}
+
+#multspace{
+	background-image:url(pictures/multpic.png);
+	border-radius: 50%;
+	height: 200px;
+	width: 200px;
+	background-size: cover;
+	text-align:center;
+	justify-content: center;
+	color: white; 
+}
+
+#rexspace{
+	background-image:url(pictures/rexpic.png);
+	border-radius: 50%;
+	height: 200px;
+	width: 200px;
+	background-size: cover;
+	text-align:center;
+	justify-content: center;
+	color: white; 
+}
+
+
+
+
+
+
+
+
+
+
+
