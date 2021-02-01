@@ -1,31 +1,38 @@
 body{
 	margin: 0;
-	
+
 }
 
 
 .survivorbackground{
-	background-image: url(https://pbs.twimg.com/media/ESsC9uPXgAA1muu.jpg:large); 
+	background-image: url(https://pbs.twimg.com/media/ESsC9uPXgAA1muu.jpg:large);
+	background-size:1910px 1300px;
+	padding:25px;
 }
 
 .survivortitleheader{
-	background-color: gray;
+	background-color: black;
+	padding: 10px;
+
 }
 
+
 .survivortitle{
-	color: blue;
+	color: white;
 	float: center;
 	text-align: center;
 	padding: 10px 20px;
+	font-family: 'Quantico', sans-serif;
+	font-weight: bold;
+    line-height: 1.1;
 }
-
 
 
 .container{
 	display: grid;
 	grid-gap: 50px 20px;
 	grid-template-columns: auto auto auto;
-	grid-column: 1/3;	
+	grid-column: 1/3;
 	align-content: flex-start;
 }
 
@@ -35,6 +42,28 @@ body{
   }
 }
 
+.overflowHidden {
+  overflow: hidden !important;
+}
+
+.modaltitle{
+	color: black;
+	float: center;
+	text-align: center;
+	padding: 10px 20px;
+	font-family: 'Quantico', sans-serif;
+	font-weight: bold;
+    line-height: 1.1;
+	overflow: hidden;
+}
+
+.modalcontainer{
+
+	border: 1px solid black;
+	background-color: white;
+}
+
+
 #acridspace{
 	background-image:url(pictures/Acridpic.png);
 	border-radius: 50%;
@@ -43,9 +72,9 @@ body{
 	background-size: cover;
 	text-align:center;
 	justify-content: center;
-	color: white; 
-	
-	
+	color: white;
+
+
 }
 #acridspace:hover{
 	cursor: pointer;
@@ -66,13 +95,380 @@ body{
 }
 
 .acridcontentmodal {
-  background-color: #fefefe;
+
+  background: rgb(81,204,59);
+  background: linear-gradient(180deg, rgba(81,204,59,1) 0%, rgba(71,89,113,1) 53%, rgba(88,9,117,1) 100%);
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
 }
+.modalinternal{
+	padding: 20px 20px;
+	text-align: center;
+	display: grid;
+	align-content: flex-start;
+	background-color: gray;
+}
 
+.acridpic{
+
+	width: 300px;
+	height: 400px;
+	margin: 2px;
+}
+
+.modalsurvivorpicdiv{
+
+	left:20px;
+	float:left;
+	margin: 2px;
+
+}
+
+.acridinfo{
+	border: 1px solid black;
+}
+
+.descriptionsurvivormodal{
+	float: center;
+	border: 1px solid black;
+	margin: 2px;
+	background-color: white;
+
+}
+
+.healthsurvivor{
+	float: center;
+	border: 1px solid black;
+	margin: 2px;
+}
+
+.acridfeatures{
+	display: grid;
+	align-content: flex-start;
+	grid-template-columns: auto auto auto auto;
+}
+
+#dmgsurvivor{
+	border: 1px solid black;
+	margin:2px;
+}
+
+#regensurvivor{
+	border: 1px solid black;
+	margin:2px;
+}
+
+#speedsurvivor{
+	border: 1px solid black;
+	margin:2px;
+}
+
+#armorsurvivor{
+	border: 1px solid black;
+	margin:2px;
+}
+
+.unlocksurvivor{
+	border: 1px solid black;
+	margin:2px;
+}
+
+.modalskill{
+
+	border: 1px solid black;
+
+}
+
+.twopassiveskill{
+	display: grid;
+	align-content: flex-start;
+	grid-template-columns: auto auto;
+	border:1px solid black;
+	margin:2px;
+}
+
+.onepassiveskill{
+
+	border:1px solid black;
+	margin:2px;
+}
+
+
+#passivetitle{
+ grid-column-end: span 2;
+}
+
+#poison{
+	border: 1px solid black;
+	margin:2px;
+}
+
+.poisontext{
+	text-align: left;
+}
+
+#blight{
+	border: 1px solid black;
+	margin:2px;
+}
+
+.blighttext{
+	text-align: left;
+}
+
+.oneprimaryskill{
+	display: grid;
+	align-content: flex-start;
+	grid-template-columns: auto;
+	border:1px solid black;
+	margin:2px;
+	flex-grow: 1;
+}
+
+.twoprimaryskill{
+	display: grid;
+	align-content: flex-start;
+	grid-template-columns: auto auto;
+	border:1px solid black;
+	margin:2px;
+	flex-grow: 1;
+}
+
+#viciouswounds{
+	border: 1px solid black;
+	margin:2px;
+
+}
+
+.survivorinfo{
+	display: grid;
+	align-content: flex-start;
+	grid-template-columns: auto auto auto;
+}
+
+#procinfonocooldown{
+	float: center;
+	border: 1px solid black;
+	margin: 2px;
+	grid-column: 1;
+}
+
+#cooldownnoprocinfo{
+	float: center;
+	border: 1px solid black;
+	margin: 2px;
+	grid-column: 1;
+}
+
+
+#descript{
+	float: center;
+	border: 1px solid black;
+	margin: 2px;
+	grid-column: 2 / span 2;
+}
+
+#cooldowninfospan2{
+	float: center;
+	border: 1px solid black;
+	margin: 2px;
+	grid-column: 1 / span 2;
+
+}
+
+.twosecondaryskill{
+	display: grid;
+	align-content: flex-start;
+	grid-template-columns: auto auto;
+	border:1px solid black;
+	margin:2px;
+	flex-grow: 1;
+}
+
+.onesecondaryskill{
+	display: grid;
+	align-content: flex-start;
+	grid-template-columns:  auto;
+	border:1px solid black;
+	margin:2px;
+	flex-grow: 1;
+}
+
+
+#spanof2title{
+	grid-column-end: span 2;
+}
+
+
+#span2secondarytitle{
+	grid-column-end: span 2;
+}
+
+#Neurotoxin{
+	border: 1px solid black;
+	margin:2px;
+}
+.neurotoxininfo{
+	display: grid;
+	align-content: flex-start;
+	grid-template-columns: auto auto;
+	margin:2px;
+}
+
+#procinfo{
+	float: center;
+	border: 1px solid black;
+	margin: 2px;
+	grid-column: 1;
+}
+
+#cooldowninfo{
+	float: center;
+	border: 1px solid black;
+	margin: 2px;
+	grid-column: 2;
+}
+
+#descriptspan{
+	float: center;
+	border: 1px solid black;
+	margin: 2px;
+	grid-column: 1 / span 2;
+}
+
+#ravenousbite{
+	border: 1px solid black;
+	margin:2px;
+}
+
+.ravenousbiteinfo{
+	display: grid;
+	align-content: flex-start;
+	grid-template-columns: auto auto;
+	margin:2px;
+
+}
+#notesravenousbite{
+	float: center;
+	border: 1px solid black;
+	margin: 2px;
+	grid-column: 1 / span 2;
+}
+
+.twoultilityskill{
+	display: grid;
+	align-content: flex-start;
+	grid-template-columns: auto auto;
+	border:1px solid black;
+	margin:2px;
+
+}
+
+.oneultilityskill{
+	display: grid;
+	align-content: flex-start;
+	grid-template-columns: auto;
+	border:1px solid black;
+	margin:2px;
+}
+
+
+#ultilitytitle{
+	grid-column-end: span 2;
+}
+
+#causticleap{
+	border: 1px solid black;
+	margin:2px;
+}
+.causticleapinfo{
+	display: grid;
+	align-content: flex-start;
+	grid-template-columns: auto auto;
+	margin:2px;
+
+}
+#notescausticleap{
+	float: center;
+	border: 1px solid black;
+	margin: 2px;
+	grid-column: 1 / span 2;
+}
+
+#frenziedleap{
+	border: 1px solid black;
+	margin:2px;
+}
+.frenziedleapinfo{
+	display: grid;
+	align-content: flex-start;
+	grid-template-columns: auto auto;
+	margin:2px;
+
+}
+
+#notefrenziedleap{
+	float: center;
+	border: 1px solid black;
+	margin: 2px;
+	grid-column: 1 / span 2;
+}
+
+.onespecialskill{
+	display: grid;
+	align-content: flex-start;
+	grid-template-columns: auto;
+	border:1px solid black;
+	margin:2px;
+}
+
+.twospecialskill{
+	display: grid;
+	align-content: flex-start;
+	grid-template-columns: auto auto;
+	border:1px solid black;
+	margin:2px;
+}
+
+
+#epidemic{
+	border: 1px solid black;
+	margin:2px;
+}
+
+
+.epidemicinfo{
+	display: grid;
+	align-content: flex-start;
+	grid-template-columns: auto auto;
+	margin:2px;
+
+}
+
+#notesepidemic{
+	float: center;
+	border: 1px solid black;
+	margin: 2px;
+	grid-column: 1 / span 2;
+}
+
+
+.acridclose {
+  color: #000000;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+
+}
+
+.acridclose:hover,
+.acridclose:focus {
+  color: #FFF;
+  text-decoration: none;
+  cursor: pointer;
+}
 
 #artificerspace{
 	background-image:url(pictures/Artificerpic.png);
@@ -82,9 +478,9 @@ body{
 	background-size: cover;
 	text-align:center;
 	justify-content: center;
-	color: white; 
+	color: white;
 
-	
+
 }
 
 
@@ -97,7 +493,7 @@ body{
 	background-size: cover;
 	text-align:center;
 	justify-content: center;
-	color: white; 
+	color: white;
 }
 
 #commandospace{
@@ -108,7 +504,7 @@ body{
 	background-size: cover;
 	text-align:center;
 	justify-content: center;
-	color: white; 
+	color: white;
 }
 
 #engineerspace{
@@ -119,8 +515,8 @@ body{
 	background-size: cover;
 	text-align:center;
 	justify-content: center;
-	color: white; 
-	
+	color: white;
+
 }
 
 #huntressspace{
@@ -131,7 +527,7 @@ body{
 	background-size: cover;
 	text-align:center;
 	justify-content: center;
-	color: white; 
+	color: white;
 }
 
 #loaderspace{
@@ -142,7 +538,7 @@ body{
 	background-size: cover;
 	text-align:center;
 	justify-content: center;
-	color: white; 
+	color: white;
 }
 
 #mercenaryspace{
@@ -153,7 +549,7 @@ body{
 	background-size: cover;
 	text-align:center;
 	justify-content: center;
-	color: white; 
+	color: white;
 }
 
 #multspace{
@@ -164,7 +560,7 @@ body{
 	background-size: cover;
 	text-align:center;
 	justify-content: center;
-	color: white; 
+	color: white;
 }
 
 #rexspace{
@@ -175,16 +571,5 @@ body{
 	background-size: cover;
 	text-align:center;
 	justify-content: center;
-	color: white; 
+	color: white;
 }
-
-
-
-
-
-
-
-
-
-
-

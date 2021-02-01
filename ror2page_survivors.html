@@ -7,28 +7,256 @@
 	<link href = "stylesurvivors.css" rel ="stylesheet" type= "text/css">
 	<title>Survivor</title>
 	</head>
-	
+
 	<body>
 	<div class= "survivortitleheader">
 	<h1 class= "survivortitle"> Survivors </h1>
 	<br>
 	</div>
-	<div class = "survivorbackground"> 
+	<div class = "survivorbackground">
 	<br>
-	
+
 	<div class = "container">
-	<div id ="acridspace">
+	<div id ="acridspace"></div>
 	
-	
+
 	<div id="acridmodal" class="modal">
 
   <!-- Modal content -->
-  <div class="acridcontentmodal">
-    <span class="close">&times;</span>
-    <p>acrid</p>
-  </div>
+	<br>
+		<br>
+	    <div class = "modalcontainer">
+			<div class = "modalinternal">
+				<h1 class = "modaltitle">Acrid</h1>
+				<div class = "modalsurvivorpicdiv">
+					<img class="acridpic" src="pictures/Acrid_modal.png">
+				</div>
+				<div class = "acridinfo">
+					<div class = "descriptionsurvivormodal">
+						<h2>Description </h2>
+						<p>Acrid is a melee-range hybrid who uses powerful poisons to melt tanky enemies.</p>
+					</div>
+					<div class = "healthsurvivor">
+						<h2>Health</h2>
+						<p>160 (+48 per level) </p>
+					</div>
+				<div class = "acridfeatures">
+					<div id = "regensurvivor">
+						<h2>Regen</h2>
+						<p> 2.5/s (0.5 per level)</p>
+					</div>
 
-</div>
+					<div id = "dmgsurvivor">
+						<h2>Damage</h2>
+						<p> 15 (+3 per level)</p>
+					</div>
+
+					<div id = "speedsurvivor">
+						<h2>Speed </h2>
+						<p> 7 m/s </p>
+					</div>
+					<div id = "armorsurvivor">
+						<h2>Armor </h2>
+						<p> 20 </p>
+					</div>
+				</div>
+				<div class = "unlocksurvivor">
+					<h2> Unlock </h2>
+					<p><strong>...To Be Left Alone </strong> (It is completed by of the Void Fields, a Hidden Realm found by activating the Null Portal in the Bazaar Between Time.)</p>
+				</div>
+			</div>
+	<!--	</div> modalintro -->
+
+			<br>
+		<div class = "modalskill">
+				<h2>Skills</h2>
+				<div class = "twopassiveskill">
+					<div id = "passivetitle">
+						<h2>Passive</h2>
+					</div>
+					<div id = "poison">
+						<h3>Poison</h3>
+						<img class="poisonpic" src="https://static.wikia.nocookie.net/riskofrain2_gamepedia_en/images/0/05/Poison.png/revision/latest/scale-to-width-down/120?cb=20200130005200">
+						<ul class = "poisontext">
+							<li>Poison ticks 3 times per second for 10 seconds.</li>
+							<li>Poison deals 1% of the victim's maximum health per second (0.33% per tick) or an amount per second equivalent to Acrid's damage stat, whichever deals more damage. Poison is capped at 50 times Acrid's Damage per second.</li>
+							<li>Poison damage is affected by armor and has the nonlethal tag.</li>
+							<li>Poison is a Damage over Time effect, meaning it cannot Proc.</li>
+						</ul>
+				</div>
+
+					<div id = "blight">
+						<h3>Blight</h3>
+						<img class = "blightpic" src= "https://static.wikia.nocookie.net/riskofrain2_gamepedia_en/images/a/ac/Blight.png/revision/latest/scale-to-width-down/128?cb=20200331165619">
+						<ul class = "blighttext">
+							<li><strong>UNLOCKED</strong> via the Acrid: Easy Prey Challenge. (As Acrid, land the killing blow on 50 total enemies that have 1 hit point left.)</li>
+							<li>Blight ticks 3 times per second for 5 seconds.</li>
+							<li>Blight deals 20% of Acrid's damage stat per tick, or 60% damage per second. Each stack of Blight increases the damage of each tick rather than adding more ticks.</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class = "oneprimaryskill">
+					<h2>Primary</h2>
+					<div id = "viciouswounds">
+						<h3>Vicious Wounds</h3>
+						<img class = "viciouswoundspic" src="https://static.wikia.nocookie.net/riskofrain2_gamepedia_en/images/5/5a/Vicious_Wounds.png/revision/latest/scale-to-width-down/128?cb=20200130005201">
+						<div class = "survivorinfo">
+							<div id = "procinfonocooldown">
+								<p><strong>Proc Coefficient</strong></p>
+								<p>1</p>
+							</div>
+							<div id = "descript">
+								<p><strong> Description </strong> </p>
+								<p>Maul an enemy for 200% damage. Every 3rd hit is Regenerative (Heals for 10% of your maximum health over 0.5 sec) and deals 400% damage.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class = "twosecondaryskill">
+					<div id = "span2secondarytitle">
+						<h2>Secondary</h2>
+					</div>
+					<div id = "Neurotoxin">
+						<h3>Neurotoxin</h3>
+						<img class = "neurotoxinpic" src = "https://static.wikia.nocookie.net/riskofrain2_gamepedia_en/images/2/2b/Neurotoxin.png/revision/latest/scale-to-width-down/128?cb=20200130005159">
+						<div class = "neurotoxininfo">
+							<div id = "procinfo">
+							<p><strong>Proc Coefficient</strong></p>
+							<p>1</p>
+							</div>
+							<div id = "cooldowninfo">
+							<p><strong> Cooldown </strong> </p>
+							<p>2s</p>
+							</div>
+							<div id = "descriptspan">
+							<p><strong> Description </strong> </p>
+							<p>Poisonous.(Deal damage equal to 10% of their maximum health over 10s. Poison cannot kill enemies.) Spit toxic bile for 240% damage.</p>
+							</div>
+
+						</div>
+					</div>
+					<div id = "ravenousbite">
+						<h3>Ravenous Bite</h3>
+						<img class = "ravenousbitepic" src ="https://static.wikia.nocookie.net/riskofrain2_gamepedia_en/images/8/8b/Ravenous_Bite.png/revision/latest/scale-to-width-down/128?cb=20200331165623">
+						<div class = "ravenousbiteinfo">
+						<div id = "procinfo">
+							<p><strong>Proc Coefficient</strong></p>
+							<p>1</p>
+							</div>
+							<div id = "cooldowninfo">
+							<p><strong> Cooldown </strong> </p>
+							<p>2s</p>
+							</div>
+							<div id = "descriptspan">
+							<p><strong> Description </strong> </p>
+							<p>Poisonous.(Deal damage equal to 10% of their maximum health over 10s. Poison cannot kill enemies.) Regenerative (Heals for 10% of your maximum health over 0.5 sec) Bite an enemy for 310% damage. Deals up to 3x damage to low health enemies.</p>
+
+							</div>
+							<div id = "notesravenousbite">
+							<p><strong> Notes </strong> </p>
+							<ul class = "poisontext">
+							<li><strong>UNLOCKED</strong> via the Acrid: Bad Medicine Challenge. (As Acrid, land the final blow on a Scavenger.)</li>
+							<li>For every 1% of health the enemy is missing, the damage multiplier is increased by 2%.</li>
+							</ul>
+							</div>
+						</div>
+					</div>
+
+
+				</div>
+				<div class = "twoultilityskill">
+					<div id = "ultilitytitle">
+						<h2>Ultility</h2>
+					</div>
+					<div id= "causticleap">
+					<h3>Caustic Leap</h3>
+						<img class = "causticleappic" src = "https://static.wikia.nocookie.net/riskofrain2_gamepedia_en/images/9/9e/Caustic_Leap.png/revision/latest/scale-to-width-down/128?cb=20200130005157">
+						<div class = "causticleapinfo">
+						<div id = "procinfo">
+							<p><strong>Proc Coefficient</strong></p>
+							<p>Leap: 1</p>
+							<p>pool: 0.1 </p>
+							</div>
+							<div id = "cooldowninfo">
+							<p><strong> Cooldown </strong> </p>
+							<p>6s</p>
+							</div>
+							<div id = "descriptspan">
+							<p><strong> Description </strong> </p>
+							<p>Poisonous.(Deal damage equal to 10% of their maximum health over 10s. Poison cannot kill enemies.) Stunning (interrupts enemies and briefly stuns them) Leap in the air, dealing 320% damage. Leave acid that deals 25% damage</p>
+
+							</div>
+							<div id = "notescausticleap">
+							<p><strong> Notes </strong> </p>
+							<ul class = "poisontext">
+							<li>Has 2 base charges</li>
+							</ul>
+							</div>
+						</div>
+
+					</div>
+					<div id = "frenziedleap">
+						<h3>Frenzied Leap</h3>
+						<img class = "frenziedleappic" src = "https://static.wikia.nocookie.net/riskofrain2_gamepedia_en/images/9/96/Frenzied_Leap.png/revision/latest/scale-to-width-down/128?cb=20200130005158">
+						<div class = "frenziedleapinfo">
+							<div id = "procinfo">
+								<p><strong>Proc Coefficient</strong></p>
+								<p>1</p>
+								</div>
+								<div id = "cooldowninfo">
+								<p><strong> Cooldown </strong> </p>
+								<p>10s</p>
+								</div>
+								<div id = "descriptspan">
+								<p><strong> Description </strong> </p>
+								<p><strong>Stunning</strong> (interrupts enemies and briefly stuns them) Leap in the air, dealing 550% damage. Reduce the cooldown by 2s for every enemy hit.</p>
+								</div>
+								<div id = "notescausticleap">
+								<p><strong> Notes </strong> </p>
+								<ul class = "poisontext">
+								<li><strong>UNLOCKED</strong> via the Acrid: Pandemic Challenge. (As Acrid, inflict Poison 1000 total times.)</li>
+								<li>Has 2 base charges</li>
+								</ul>
+								</div>
+						</div>
+
+					</div>
+				</div>
+				<div class = "specialskill">
+				<h2>Special</h2>
+					<div id = "epidemic">
+						<h3>Epidemic</h3>
+						<img class = "epidemicpic" src = "https://static.wikia.nocookie.net/riskofrain2_gamepedia_en/images/9/9d/Epidemic.png/revision/latest/scale-to-width-down/128?cb=20200130005158">
+						<div class = "epidemicinfo">
+							<div id = "procinfo">
+								<p><strong>Proc Coefficient</strong></p>
+								<p>1</p>
+								</div>
+								<div id = "cooldowninfo">
+								<p><strong> Cooldown </strong> </p>
+								<p>10s</p>
+								</div>
+								<div id = "descriptspan">
+								<p><strong> Description </strong> </p>
+								<p><strong>Stunning</strong> (interrupts enemies and briefly stuns them) Leap in the air, dealing 550% damage. Reduce the cooldown by 2s for every enemy hit.</p>
+								</div>
+								<div id = "notesepidemic">
+								<p><strong> Notes </strong> </p>
+								<ul class = "poisontext">
+								<li>If Epidemic hits a surface it will bounce to any nearby Monsters.</li>
+								</ul>
+								</div>
+						</div>
+					</div>
+				</div>
+				</div>
+		</div>
+
+		</div>
+	  </div>
+	  </div>
 
 <!--
 	<h2>skills</h2>
@@ -36,10 +264,10 @@
 	<h2>passive Skills </h2>
 	<div id = "skillbox">
 	<h2 >Poison</h2>
-	
+
 	</div>
 	<h2> Blight</h2>
-	
+
 	</div>
 	<div id = "primaryskillacrid">
 	<h2> Primary Skills </h2>
@@ -48,24 +276,24 @@
 
 	<div id = "secondaryskillacrid">
 	<h3> Neurotoxin </h3>
-	
-	
+
+
 	</div>
 	<div id = "utilityacrid">
 	<h3> Caustic leap</h3>
-	
+
 	</div>
--->	
-	</div>
+-->
+
 	<div id = "artificerspace" onclick= "">
-	
+
 
 
 
 
 
 	</div>
-	
+
 	<div id = "captainspace">
 
 </div>
@@ -73,32 +301,32 @@
 
 	</div>
 	<div id = "engineerspace">
-	
+
 	</div>
 	<div id = "huntressspace">
-	
+
 	</div>
 	<div id = "loaderspace">
 
 	</div>
 	<div id = "mercenaryspace">
-	
+
 	</div>
 	<div id = "multspace">
 
 	</div>
-	
+
 	<div id = "rexspace">
 
 	</div>
-	
-	</div>
-	
-	
 
 	</div>
-	
+
+
+
+	</div>
+
 	</body>
-	
-	
+
+
 </html>
